@@ -2,8 +2,6 @@
 
 **VBox** is a powerful, all-in-one system utility designed for Linux users to manage applications, monitor system resources, and optimize performance. Built with **Python** and **PySide6**, it offers a modern, clean, and responsive graphical user interface (GUI) that integrates seamlessly with your desktop environment.
 
-![VBox Screenshot](image/logo.png)
-
 ##  Key Features
 
 ### 1. Application Manager

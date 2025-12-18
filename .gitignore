@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Build Artifacts (PyInstaller, RPM, AppImage)
+build/
+dist/
+*.spec
+rpm_build/
+rpm_dist/
+AppDir/
+*.egg-info/
+
+# Scripts (User request)
+*.sh
+
+# IDEs and Editors
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# System
+Thumbs.db

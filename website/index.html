@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBox - The Ultimate Linux System Toolbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="VBox Logo">
+                <span>VBox</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="https://github.com/yourusername/vbox" target="_blank">GitHub</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <div class="toggle-blob"></div>
+                    <div class="toggle-option option-light">
+                        <i data-feather="sun"></i>
+                        <span>Light</span>
+                    </div>
+                    <div class="toggle-option option-dark">
+                        <i data-feather="moon"></i>
+                        <span>Dark</span>
+                    </div>
+                </button>
+                <a href="#download" class="btn btn-primary nav-btn">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1>Master Your Linux System with <span class="gradient-text">VBox</span></h1>
+                <p>The all-in-one system utility for Fedora and Linux enthusiasts. Manage apps, monitor resources, and
+                    clean your system with a beautiful, modern interface.</p>
+                <div class="hero-btns">
+                    <a href="#download" class="btn btn-primary icon-btn">
+                        <i data-feather="download"></i> Download Now
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="tech-stack">
+                    <span>Built for:</span>
+                    <i data-feather="monitor"></i>
+                    <span>Linux</span>
+                    <span class="dot">•</span>
+                    <span>Fedora</span>
+                    <span class="dot">•</span>
+                    <span>Ubuntu</span>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/screenshot.png" alt="VBox Screenshot" class="app-screenshot">
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need to keep your system running smoothly.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i data-feather="package"></i>
+                    </div>
+                    <h3>App Manager</h3>
+                    <p>Instantly search, filter, and uninstall applications. Supports RPM, DEB, Flatpak, Snap, and
+                        AppImages.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i data-feather="hard-drive"></i>
+                    </div>
+                    <h3>Disk Analyzer</h3>
+                    <p>Visualize your disk usage with interactive charts. Identify large files and clean up space
+                        effortlessly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i data-feather="cpu"></i>
+                    </div>
+                    <h3>Resource Monitor</h3>
+                    <p>Real-time monitoring of RAM and CPU usage. Identify resource-hungry processes and kill them
+                        instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-box">
+                        <i data-feather="zap"></i>
+                    </div>
+                    <h3>Blazing Fast</h3>
+                    <p>Optimized for performance. Scans thousands of packages in seconds using multi-threaded
+                        processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-box">
+                <div class="download-content">
+                    <div class="version-wrapper">
+                        <span id="version-badge" class="badge">v1.0.0 Released</span>
+                    </div>
+                    <h2>Ready to optimize your workflow?</h2>
+                    <p>Download VBox for your Linux distribution today.</p>
+                    <div class="download-options">
+                        <a href="#" id="download-rpm" class="download-card">
+                            <div class="d-icon"><i data-feather="box"></i></div>
+                            <div class="d-info">
+                                <span class="d-type">Fedora / RHEL</span>
+                                <span class="d-ext">.rpm</span>
+                            </div>
+                            <div class="d-action"><i data-feather="download-cloud"></i></div>
+                        </a>
+                        <a href="#" id="download-appimage" class="download-card">
+                            <div class="d-icon"><i data-feather="layers"></i></div>
+                            <div class="d-info">
+                                <span class="d-type">Universal</span>
+                                <span class="d-ext">.AppImage</span>
+                            </div>
+                            <div class="d-action"><i data-feather="download-cloud"></i></div>
+                        </a>
+                    </div>
+
+                    <div class="previous-versions">
+                        <button id="toggle-versions" class="btn-text">
+                            View Previous Versions <i data-feather="chevron-down"></i>
+                        </button>
+                        <div id="version-list" class="version-list hidden">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <p class="small-text">Requires 64-bit Linux. Open Source.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="VBox">
+                <span>VBox</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 VBox Team. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

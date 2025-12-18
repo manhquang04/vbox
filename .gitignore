@@ -29,3 +29,6 @@ AppDir/
 
 # System
 Thumbs.db
+
+# Exclude website
+website/
